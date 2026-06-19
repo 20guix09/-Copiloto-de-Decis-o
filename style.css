@@ -1,0 +1,115 @@
+/* Variáveis de Design Executivo */
+:root {
+    --navy: #0A192F;
+    --navy-light: #172A45;
+    --emerald: #059669;
+    --emerald-light: #D1FAE5;
+    --white: #FFFFFF;
+    --gray-bg: #F8FAFC;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--gray-bg) !important;
+    color: #334155;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários de Cores Customizadas */
+.bg-navy {
+    background-color: var(--navy) !important;
+}
+
+.text-navy {
+    color: var(--navy) !important;
+}
+
+.text-emerald {
+    color: var(--emerald) !important;
+}
+
+.bg-soft-emerald {
+    background-color: var(--emerald-light) !important;
+}
+
+.btn-emerald {
+    background-color: var(--emerald) !important;
+    border-color: var(--emerald) !important;
+}
+
+.btn-emerald:hover {
+    background-color: #047857 !important;
+    border-color: #047857 !important;
+}
+
+.border-emerald-4 {
+    border-left: 4px solid var(--emerald) !important;
+}
+
+/* Card de Alto Contraste para Perda de Dinheiro */
+.card-lost-money {
+    background-color: var(--navy) !important;
+}
+
+.text-white-80 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Transições, Estilos de Cursor e Popovers */
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.form-control:focus {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 0.25rem rgba(10, 25, 47, 0.15);
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+/* Customização dos Popovers Informativos */
+.popover {
+    --bs-popover-border-color: rgba(10, 25, 47, 0.15);
+    --bs-popover-header-bg: var(--navy);
+    --bs-popover-header-color: var(--white);
+    box-shadow: 0 10px 25px -5px rgba(10, 25, 47, 0.1);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 8px;
+}
+
+.popover-header {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.popover-body {
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+/* Ajustes para Impressão Limpa do PDF */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background-color: #fff !important;
+    }
+    .card {
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+    }
+    .card-lost-money {
+        background-color: var(--navy) !important;
+        color: #fff !important;
+    }
+    .card-lost-money p, .card-lost-money h2, .card-lost-money span {
+        color: #fff !important;
+    }
+}

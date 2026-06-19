@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiloto de Decisão - Diagnóstico de 5 Minutos</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-tight" href="#">
+                <span class="text-emerald me-1"><i class="bi bi-info-circle-fill"></i></span> Copiloto de Decisão
+            </a>
+            <span class="navbar-text text-white-50 d-none d-sm-inline">
+                Inteligência de Vendas Ativa para o Varejo
+            </span>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                
+                <!-- Card do Formulário -->
+                <div class="card shadow-sm border-0 bg-white p-4 p-sm-5">
+                    <div class="text-center mb-4">
+                        <h1 class="h3 fw-bold text-navy">Diagnóstico Rápido</h1>
+                        <p class="text-muted small">Descubra em 5 minutos onde sua loja está perdendo dinheiro e como corrigir isso imediatamente.</p>
+                    </div>
+
+                    <form id="form-diagnostico">
+                        <div class="mb-3">
+                            <label for="faturamento" class="form-label fw-medium text-navy">Faturamento Mensal Estimado (R$)</label>
+                            <input type="number" class="form-control" id="faturamento" placeholder="Ex: 50000" required min="0">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ticketMedio" class="form-label fw-medium text-navy">Ticket Médio por Venda (R$)</label>
+                            <input type="number" class="form-control" id="ticketMedio" placeholder="Ex: 250" required min="0">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="atendimentos" class="form-label fw-medium text-navy">Clientes Atendidos/Mês (Fluxo Total)</label>
+                            <input type="number" class="form-control" id="atendimentos" placeholder="Ex: 400" required min="0">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="vendas" class="form-label fw-medium text-navy">Vendas Realizadas/Mês</label>
+                            <input type="number" class="form-control" id="vendas" placeholder="Ex: 120" required min="0">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="investimentoDigital" class="form-label fw-medium text-navy">Investimento em Anúncios Digitais (R$)</label>
+                            <input type="number" class="form-control" id="investimentoDigital" placeholder="Ex: 1500" required min="0">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="clientesSumidos" class="form-label fw-medium text-navy">Clientes que não voltam há + de 1 ano (Est.)</label>
+                            <input type="number" class="form-control" id="clientesSumidos" placeholder="Ex: 300" required min="0">
+                        </div>
+
+                        <button type="submit" class="btn btn-emerald w-100 py-3 fw-bold text-white transition">
+                            Gerar Diagnóstico Imediato
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé Nexus Studio -->
+    <footer class="bg-navy text-white-50 text-center py-4 border-top border-secondary-subtle no-print mt-auto">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 small">&copy; 2026 Copiloto de Decisão. Todos os direitos reservados.</p>
+            <div class="d-flex align-items-center gap-2">
+                <span class="small text-white-50">Desenvolvido por:</span>
+                <img src="logo.png" alt="Nexus Studio Logo" style="height: 22px; width: 22px; object-fit: contain;">
+                <span class="fw-bold text-white tracking-tight">Nexus Studio</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery & Bootstrap Bundle (inclui Popper) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
