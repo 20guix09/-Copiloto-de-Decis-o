@@ -1,0 +1,81 @@
+/* Variáveis Dark Mode Ultra Premium */
+:root {
+    --navy-dark: #020C1B;
+    --navy: #0A192F;
+    --navy-light: #172A45;
+    --gold: #C59A3F;
+    --gold-light: rgba(197, 154, 63, 0.1); 
+    --white: #FFFFFF;
+    --text-main: #CBD5E1;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--navy-dark) !important;
+    color: var(--text-main);
+}
+
+/* Utilitários Essenciais */
+.bg-navy { background-color: var(--navy) !important; }
+.text-gold { color: var(--gold) !important; }
+
+/* Botões do Quiz no Modo Escuro - Alinhamento Forçado */
+.btn-option {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-main) !important;
+}
+
+.btn-option:hover {
+    background-color: var(--navy-light) !important;
+    border-color: var(--gold) !important;
+    color: var(--white) !important;
+}
+
+.btn-option-selected {
+    border-color: var(--gold) !important;
+    background-color: var(--gold-light) !important;
+    color: var(--white) !important;
+    box-shadow: 0 0 0 1px var(--gold) !important;
+}
+
+/* Inputs do Formulário Dark */
+.input-custom {
+    width: 100% !important;
+    background-color: var(--navy-dark) !important;
+    color: var(--white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.input-custom:focus {
+    border-color: var(--gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(197, 154, 63, 0.2) !important;
+}
+
+/* Botão Dourado Principal */
+.btn-gold {
+    background-color: var(--gold) !important;
+    color: var(--navy-dark) !important;
+    border: none;
+}
+
+.btn-gold:hover {
+    background-color: #D4AF60 !important;
+}
+
+/* Ocultar barra de scroll para ficar mais elegante */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--navy-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--navy-light);
+    border-radius: 4px;
+}
